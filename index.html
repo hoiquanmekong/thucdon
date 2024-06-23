@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Hàng XYZ - Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .menu-item {
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .menu-item {
+                width: 100%;
+            }
+        }
+        @media (min-width: 769px) {
+            .menu-item {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Nhà Hàng XYZ - Menu</h1>
+    </div>
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="1.jpg" alt="Menu Page 1">
+        </div>
+        <div class="menu-item">
+            <img src="2.jpg" alt="Menu Page 2">
+        </div>
+        <div class="menu-item">
+            <img src="3.jpg" alt="Menu Page 3">
+        </div>
+        <!-- Thêm nhiều trang menu nếu cần -->
+    </div>
+</body>
+</html>
