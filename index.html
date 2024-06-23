@@ -20,6 +20,32 @@
         .header h1 {
             margin: 0;
         }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+        .menu-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .menu-section h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
         .menu-container {
             display: flex;
             flex-wrap: wrap;
@@ -56,19 +82,48 @@
 </head>
 <body>
     <div class="header">
-        <h1>Nhà Hàng XYZ - Menu</h1>
+        <h1>HỘI QUÁN MEKONG - Menu</h1>
     </div>
-    <div class="menu-container">
-        <div class="menu-item">
-            <img src="1.webp" alt="Menu Page 1">
+    <div class="nav">
+        <a href="#do-an">Đồ Ăn</a>
+        <a href="#do-uong">Đồ Uống</a>
+        <a href="#ruou-bia">Rượu & Bia</a>
+    </div>
+    <div id="do-an" class="menu-section">
+        <h2>Đồ Ăn</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="1.webp" alt="Đồ Ăn 1">
+            </div>
+            <div class="menu-item">
+                <img src="2.webp" alt="Đồ Ăn 2">
+            </div>
+            <!-- Thêm nhiều món ăn -->
         </div>
-        <div class="menu-item">
-            <img src="2.webp" alt="Menu Page 2">
+    </div>
+    <div id="do-uong" class="menu-section">
+        <h2>Đồ Uống</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="1.webp" alt="Đồ Uống 1">
+            </div>
+            <div class="menu-item">
+                <img src="2.webp" alt="Đồ Uống 2">
+            </div>
+            <!-- Thêm nhiều đồ uống -->
         </div>
-        <div class="menu-item">
-            <img src="3.webp" alt="Menu Page 3">
+    </div>
+    <div id="ruou-bia" class="menu-section">
+        <h2>Rượu & Bia</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="1.webp" alt="Rượu & Bia 1">
+            </div>
+            <div class="menu-item">
+                <img src="2.webp" alt="Rượu & Bia 2">
+            </div>
+            <!-- Thêm nhiều rượu và bia -->
         </div>
-        <!-- Thêm nhiều trang menu nếu cần -->
     </div>
 </body>
 </html>
