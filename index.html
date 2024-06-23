@@ -28,7 +28,6 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            align-items: center;
         }
         .nav a {
             color: #fff;
@@ -110,6 +109,26 @@
             }
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var dropdownItems = document.querySelectorAll('.dropdown-content a');
+            dropdownItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    var dropdownContent = this.parentElement;
+                    dropdownContent.style.display = 'none';
+                });
+            });
+            var dropdown = document.querySelector('.dropdown');
+            dropdown.addEventListener('mouseover', function() {
+                var dropdownContent = this.querySelector('.dropdown-content');
+                dropdownContent.style.display = 'block';
+            });
+            dropdown.addEventListener('mouseleave', function() {
+                var dropdownContent = this.querySelector('.dropdown-content');
+                dropdownContent.style.display = 'none';
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="header">
